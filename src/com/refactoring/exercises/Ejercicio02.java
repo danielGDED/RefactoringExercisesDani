@@ -7,9 +7,17 @@ public class Ejercicio02 {
 
     public double procesarCompra(double precio, int cantidad, boolean esClienteVIP) {
         double total = precio * cantidad;
+        
         if (esClienteVIP) {
-            total = total - (total * 0.15);
+            total = aplicarDescuento(total);
         }
+  
         return total;
+    }
+    
+    public double aplicarDescuento(double total) {
+     
+    	return total - (total * 0.15);
+    	
     }
 }
