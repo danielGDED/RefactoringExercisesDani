@@ -7,5 +7,6 @@ public class Ejercicio01 {
 
 	public double calcularTotal(double precio, int cantidad) {
 		return precio * cantidad;
+		
 	}
 }
