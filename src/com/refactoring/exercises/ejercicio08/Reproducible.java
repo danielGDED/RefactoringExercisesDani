@@ -1,4 +1,4 @@
-package com.refactoring.exercises.ejercicio8;
+package com.refactoring.exercises.ejercicio08;
 
 public interface Reproducible {
 

@@ -8,10 +8,10 @@ public class Cliente {
         return vip;
     }
 
-	public double calcularDescuento(Pedido monto) {
+	public double calcularDescuento(double monto) {
 	    if (esVIP()) {
-	        return monto.monto * 0.15;
+	        return monto * 0.15;
 	    }
-	    return monto.monto * 0.05;
+	    return monto * 0.05;
 	}
 }
