@@ -1,4 +1,4 @@
-package com.refactoring.exercises;
+package com.refactoring.exercises.ejercicio12;
 
 //EJERCICIO 12: Replace Conditional with Polymorphism (Reemplazar Condicional con Polimorfismo)
 //Reemplaza el switch con polimorfismo usando herencia
@@ -6,13 +6,17 @@ package com.refactoring.exercises;
 public class Ejercicio12 {
 
     public double calcularSalario(String tipo, double horasTrabajadas) {
+    	Empleado empleado;
         switch (tipo) {
             case "DESARROLLADOR":
-                return horasTrabajadas * 50;
+            	empleado = new Developer(horasTrabajadas);
+                return empleado.calcularSalario();
             case "DISEÑADOR":
-                return horasTrabajadas * 40;
+            	empleado = new Diseñador(horasTrabajadas);
+                return empleado.calcularSalario();
             case "TESTER":
-                return horasTrabajadas * 35;
+            	empleado = new Tester(horasTrabajadas);
+                return empleado.calcularSalario();
             default:
                 return horasTrabajadas * 30;
         }
