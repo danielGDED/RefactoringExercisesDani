@@ -5,4 +5,12 @@ package com.refactoring.exercises.ejercicio14;
 
 public class Empleado {
 
+	private String nombre;
+
+	public String obtenerNombre() {
+	    return nombre;
+	}
+	
+	
+
 }
