@@ -5,7 +5,7 @@ package com.refactoring.exercises;
 
 public class Ejercicio10 {
 
-    public String crearMensaje(String nombre, String apellido, int edad) {
+    public String crearMensaje(int edad, String nombre, String apellido, String titulo) {
         return "Nombre: " + nombre + " " + apellido + ", Edad: " + edad;
     }
 }
